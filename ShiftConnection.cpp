@@ -20,6 +20,11 @@ ShiftConnection::setupChannel() const {
 }
 
 void
+ShiftConnection::applyDeviceSettings() const {
+  /* just to implement the interface */
+}
+
+void
 ShiftConnection::assert() const {
   // TODO: ?evaluate SPI mode in config and respect CPOL?
   digitalWrite(_cs, LOW);

@@ -28,7 +28,7 @@ public:
   virtual uint8_t receive() const;
 
   ShiftConnection(const SerialConfig& config,
-    uint8_t cs, uint8_t mosi, uint8_t miso, uint8_t sclk);
+    uint8_t cs = 10, uint8_t mosi = 11, uint8_t miso = 12, uint8_t sclk = 13);
 };
 
 #endif /* ndef ShiftConnection_h */
